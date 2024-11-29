@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -16,7 +18,6 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0em;
 }
 
 h1 {
@@ -126,7 +127,7 @@ header{
 
 
 .menu-link:hover {
-  color: #0065FC;
+  color: var(--main-color);
 }
 
 .menu-link:hover::before {
@@ -137,7 +138,7 @@ header{
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #0065FC; 
+  background-color: var(--main-color); 
 }
 
 
@@ -145,9 +146,14 @@ header{
 
 /*** Hébergements de rêve : formulaire*****/
 
+.hergements-de-reves h1{
+  margin: 5px 0px 5px 0px;
+}
+
 .hergements-de-reves-forms{
   background-color: rgba(255, 0, 0, 0);
   align-items: center;
+  margin-top: 22px;
 }
 
 .search-form{
@@ -155,7 +161,7 @@ header{
 }
 
 .form-icon{
- background-color: #F2F2F2;
+ background-color: var(--main-bg-color);
  border-top-left-radius: 25px ;
  border-bottom-left-radius: 25px ;
  padding: 16px;
@@ -184,14 +190,14 @@ input::placeholder{
 
 
 .search-button{
-  background-color: #0065FC;
+  background-color: var(--main-color);
   color: white; 
   font-weight: 600;
   border: none;
   padding: 15px 15px;
   border-top-right-radius: 25px ;
   border-bottom-right-radius: 25px ;
-  border: #0065FC 1px solid ;
+  border: var(--main-color) 1px solid ;
 }
 
 
@@ -205,7 +211,14 @@ input::placeholder{
 .container-filtres{
   display: flex;
   flex-direction: row;
-  margin-top: 33px;
+  margin: 33px 0px 33px 0px;
+}
+
+.container-filtres span {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .filtres {
@@ -226,12 +239,12 @@ input::placeholder{
 }
 
 .btn-filtres:hover{
-  background-color: #DEEBFF;
+  background-color: var(--filter-bg-color);
   cursor: pointer;
 }
 
 .fa-solid{
-  color: #0065fc;
+  color: var(--main-color);
   font-size: large;
   margin-right: 5px;
 }
@@ -280,6 +293,10 @@ input::placeholder{
   margin-top: 33px;
 }
 
+.hebergements-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
 
 .hebergements-cards img {
   width: 100%;
@@ -289,7 +306,7 @@ input::placeholder{
 }
 
 .neutral-star{
-  color: #f2f2f2;
+  color: var(--main-bg-color);
 }
 
 .hebergements-cards .card-content {
@@ -300,7 +317,7 @@ input::placeholder{
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 130px;
+  height: 100px;
 }
 
 
@@ -420,7 +437,7 @@ input::placeholder{
 /****** Footer - ajouté par Emmanuelle ***********/ 
 
 footer{
-  background-color: #F2F2F2;
+  background-color: var(--main-bg-color);
   max-width: 100%;
   padding: 33px;
 }
@@ -432,10 +449,17 @@ footer{
   align-items: flex-start;
 }
 
-
 .footer-col{
   width: 33%;
+}
 
+.footer-col-main-title{
+  font-weight: 600;
+  font-size: 16px;
+}
+.footer-col p {
+  padding: 5px;
+  font-size: 15px;
 }
 
 /************************ End of Desktop view ********************************/
@@ -474,6 +498,10 @@ footer{
     margin-bottom: 33px;
   }
 
+  .hergements-de-reves h1{
+    margin: 15px 0px 15px 0px;
+  }
+
   .populaires {
     width: 100%;
   }
@@ -495,7 +523,7 @@ footer{
   }
 
   .populaires-cards .card-content{
-    height: 180px;
+    height: 167px;
   }
 
   .populaires-cards .card-subtitle {
@@ -503,7 +531,7 @@ footer{
   } 
 
   .populaires-cards img {
-    height: 180px;
+    height: 170px;
 }
 
  /****** Activités (tablets) *******/ 
@@ -596,8 +624,20 @@ footer{
     padding: 0px 30px 0px 30px ;
   }
 
+  .hergements-de-reves h1{
+    margin: 30px 0px 15px 0px;
+  }
+
   .search-form{
     margin-top: 33px;
+  }
+
+  .container-filtres span{
+    margin-bottom: 15px;
+  }
+
+  .container-nbre-logements{
+    margin-bottom: 15px;
   }
 
   .form-icon{
@@ -615,13 +655,13 @@ footer{
 
   .search-button-icon{
     display: block;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     padding: 17px 17px;
     border-top-right-radius: 20px ;
     border-top-left-radius: 20px ;
     border-bottom-right-radius: 20px ;
     border-bottom-left-radius: 20px ;
-    border: #0065FC 1px solid ;
+    border: var(--main-color) 1px solid ;
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
   } 
 
@@ -704,7 +744,7 @@ footer{
   }
 
   .hebergements-cards .card-content{
-    height: auto;
+    height: 110px;
   }
 
 
