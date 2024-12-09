@@ -32,7 +32,7 @@ h3{
   font-size: 16px;
 }
 
-.main-container {
+.body-container {
     width: 100%;
     max-width: 1440px;
     min-width: 320px ;
@@ -146,11 +146,11 @@ header{
 
 /*** Hébergements de rêve : formulaire*****/
 
-.hergements-de-reves h1{
+.container-main-information h1{
   margin: 5px 0px 5px 0px;
 }
 
-.hergements-de-reves-forms{
+.hebergements-de-reves-forms{
   background-color: rgba(255, 0, 0, 0);
   align-items: center;
   margin-top: 22px;
@@ -498,7 +498,7 @@ footer{
     margin-bottom: 33px;
   }
 
-  .hergements-de-reves h1{
+  .container-main-information h1{
     margin: 15px 0px 15px 0px;
   }
 
@@ -614,17 +614,17 @@ footer{
 
   /****** Main (mobile phone)***********/
 
-  .main-container {
+  .body-container {
     padding: 0px;
   }
 
   /*** Hébergements de rêve : formulaire (mobile phone)******/
 
-  .hergements-de-reves{
+  .container-main-information{
     padding: 0px 30px 0px 30px ;
   }
 
-  .hergements-de-reves h1{
+  .container-main-information h1{
     margin: 30px 0px 15px 0px;
   }
 
